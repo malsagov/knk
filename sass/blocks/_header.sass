@@ -50,6 +50,47 @@
     font-size: 14px
     font-weight: 500
     text-transform: uppercase
+.header-mobile__menu
+    display: none
+.mobile-menu
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 20px
+.mobile-list
+    display: flex
+    flex-direction: column
+    align-items: center
+.mobile-item
+    margin-bottom: 20px 
+.mobile-link
+    color: $text-color
+    text-decoration: none
+    font-size: 24px
+    text-transform: uppercase
+    &:hover
+        background: linear-gradient(270deg, #FF7528 0%, #FFB31F 102.53%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &:active
+        background: linear-gradient(270deg, #FF7528 0%, #FFB31F 102.53%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+.mobile-phone
+    color: $text-color
+    text-decoration: none
+    font-size: 24px
+    text-transform: uppercase
+    &:hover
+        background: linear-gradient(270deg, #FF7528 0%, #FFB31F 102.53%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    &:active
+        background: linear-gradient(270deg, #FF7528 0%, #FFB31F 102.53%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+.mobile-menu__active
+    display: block
 @media screen and (max-width: 870px)
     .menu-item:not(:last-child)
         margin-right: 30px 
@@ -64,7 +105,7 @@
         font-size: 20px
 @media screen and (min-width: 700px)
     .burger
-        display: bnone
+        display: none
 @media screen and (max-width: 699px)
     .header-menu
         display: none
@@ -101,6 +142,7 @@
             position: absolute
             left: 0
             bottom: -10px
+        
 
         
   
