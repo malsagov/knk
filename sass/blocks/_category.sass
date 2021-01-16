@@ -1,6 +1,7 @@
 .category
     background-color: $main-bg
     position: relative
+    overflow: hidden
 .category-box
     display: flex
     align-items: center
@@ -45,6 +46,9 @@
     cursor: pointer
     position: absolute
     right: 0
+    z-index: 10
+    &:focus
+        outline: none
     &::before
         content: ''
         position: absolute
@@ -59,3 +63,16 @@
     left: 48px
     top: 50%
     transform: translateY(-50%)
+@media screen and (max-width: 710px)
+    .category-callback
+        display: none
+    .category-box
+        position: relative
+        height: 49.2px
+    .category-list
+        overflow-x: scroll
+        overflow: -moz-scrollbars-none
+    .category-list::-webkit-scrollbar 
+        height: 0
+        background: transparent
+        overflow: -moz-scrollbars-none
